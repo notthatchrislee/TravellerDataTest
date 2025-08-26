@@ -25,5 +25,20 @@ tr:nth-child(even) {
     background: #fafafa;
 }
 .highlight {
-    background: #ffeaa7;
+    background: #ffeaa7 !important;
+}
+
+#ageChart{
+    border:1px solid #000;
+}
+
+.country-legend {
+    margin-top: 10px;
+    float:left;
+    width:100px;
+    text-align:center;
+}
+
+#ageChartContainer{
+    position:relative;
 }

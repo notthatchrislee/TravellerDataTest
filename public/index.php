@@ -23,6 +23,10 @@
         <select id="tripFilter">
             <option value="">All</option>
         </select>
+
+        <label for="nameFilter">Filter by Name:</label>
+        <input id="nameFilter" type="text" placeholder="Search by name...">
+        </input>
     </div>
 
     <!-- travellers -->
@@ -37,6 +41,17 @@
         </thead>
         <tbody></tbody>
     </table>
+
+    <!-- chart -->
+
+    <div>
+        <h2>Average Age by Country</h2>
+        <div id="ageChartContainer">
+            <canvas id="ageChart" ></canvas>
+            <div id="ageChartLegend"></div>
+        </div>
+  
+    </div>
 
     <script>
         const travellerData = <?php echo json_encode($travellers); ?>;
